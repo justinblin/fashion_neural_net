@@ -24,9 +24,9 @@ class NeuralNetwork(nn.Module):
         return self.linear_relu_stack(input)
     
 # define hyperparameters
-learning_rate = 10**-3
+learning_rate = 3*10**-3
 batch_size = 64
-epochs = 20
+epochs = 25
 
 # define how to do training and testing
 def training_loop(dataloader, model, loss_function, optimizer):
